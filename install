@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "install"
+source https://raw.githubusercontent.com/dimasahmad/run/master/install
