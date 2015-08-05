@@ -1,0 +1,10 @@
+#!/bin/bash
+#Source: http://askubuntu.com/a/272172
+
+echo "$(tput bold)Checking current DPI$(tput sgr0)"
+xdpyinfo | grep dots
+xrdb -query | grep dpi
+cat /var/log/Xorg.0.log | grep DPI
+
+echo "$(tput bold)Checking actual screen size in cm$(tput sgr0)"
+xrandr | grep -w connected
